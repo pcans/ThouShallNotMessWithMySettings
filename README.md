@@ -16,7 +16,9 @@ But it can be use to watch any entries you might want.
 
 ## How to use it
 The tool is really easy to use, just start it and it will create an example config for you that you can re-use. I keep it's windows open because I like to see when it protect me from again, re-enter my proxy settings.
+
     ThouShallNotMessWithMySettings.exe [settings_file]
+
 Parameters:
 
 * **/h** - Display help
