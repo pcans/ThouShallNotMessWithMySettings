@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="keys" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+<xs:simpleType name="keyType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="REG_DWORD"/>
+    <xs:enumeration value="REG_SZ"/>
+    <xs:enumeration value="REG_BINARY"/>
+  </xs:restriction>
+</xs:simpleType>
+
+  <xs:element name="keys">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="key">
+          <xs:complexType>
+            <xs:all>
+              <xs:element name="path" type="xs:string" minOccurs="1" maxOccurs="1"/>
+              <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+              <xs:element name="value" type="xs:string" minOccurs="1" maxOccurs="1"/>
+              <xs:element name="type" type="keyType" minOccurs="1" maxOccurs="1"/>
+
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

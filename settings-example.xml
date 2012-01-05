@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<keys>
+  
+<!--
+
+You can enforce number values
+
+  <key>
+    <path>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings</path>
+    <name>ProxyEnable</name>
+    <type>REG_DWORD</type>
+    <value>1</value>
+  </key>
+
+Or string values:
+
+  <key>
+    <path>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings</path>
+    <name>ProxyServer</name>
+    <type>REG_SZ</type>
+    <value>myproxy.corporate.com:8080</value>
+  </key>
+
+Even binary values. in the binary data all other characters than 0-9ABCDEF will be ignored.
+
+  <key>
+    <path>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections</path>
+    <name>SavedLegacySettings</name>
+    <type>REG_BINARY</type>
+    <value>46 00 00 00 00 00 00 00 03 00 00 00 2F 00 00 00</value>
+  </key>
+
+  -->
+
+
+
+</keys>
